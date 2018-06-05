@@ -282,7 +282,7 @@ function getMIB (nodeName, date, time) {
     }
     
       sumInbound = inbound[55].inbound + inbound[57].inbound
-      sumOutbound += outbound[55].inbound + outbound[57].inbound
+      sumOutbound = outbound[55].outbound + outbound[57].outbound
    // console.log('Sum inbound : ' + sumInbound)
     // console.log('Sum PacketIn :' + sumInpkts)
     // console.log('Packetloss : ' + packetloss)
