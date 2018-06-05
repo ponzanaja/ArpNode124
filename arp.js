@@ -102,7 +102,7 @@ setInterval(() => {
     let indexOfPercent = newResult.lastIndexOf("%")
     packetloss = newResult.slice(indexOfD+9 ,indexOfPercent)
     packetloss = packetloss.trim()
-    console.log(packetloss)
+    //console.log(packetloss)
   })
 
 }, 300000)
@@ -332,8 +332,8 @@ function getMIB (nodeName, date, time) {
 
     setTimeout(() => {  
     let sumInterface = intSpd[23].intSpd/1048576
-    console.log(sumInterface)
-      console.log(insertIn)
+    //console.log(sumInterface)
+      //console.log(insertIn)
       firebase.database().ref().child('db/'+firebaseKey+'/inbound').push(insertIn)
       firebase.database().ref().child('db/'+firebaseKey+'/outbound').push(insertOut)
       firebase.database().ref().child('db/'+firebaseKey+'/packetloss').set(packetloss)
