@@ -1,4 +1,4 @@
-/* Node 124 ห้องสำนักงานคณะบดี Code = C* swsws swsw/
+/* Node 124 ห้องสำนักงานคณะบดี Code = C* */
 const express = require('express')
 const firebase = require('firebase')
 const snmp = require('snmp-native')
